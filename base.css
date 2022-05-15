@@ -1,0 +1,93 @@
+:root {
+  --text-color-primary: #000;
+  --text-color-secondary: #fff;
+  
+  --background-color-primary: #000;
+  --background-color-secondary: #fff;
+
+  --letter-spacing: 0.01em;
+
+  --font-size-regular: 1.8rem;
+  --line-height-regular: 1.16em;
+
+  --font-size-bold: 2.4rem;
+  --line-height-bold: 2.8rem;
+  
+  --front-primary: 'Gilroy-Bold';
+  --front-secondary: 'Gilroy-Medium';
+
+
+  --heightSubMenu: 10px;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; 
+  /* 
+    1rem = 10px 
+  */
+  line-height: 2.1rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-family: var(--font-family), sans-serif;
+}
+
+i {
+  display: inline-block;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.df {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.df__center{
+  justify-content: center;
+}
+
+.df__unset{
+  justify-content: unset;
+}
+
+.df__flex{
+  flex-direction: column
+}
+
+.text {
+  color: var(--text-primary-white);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+}
+
+img {
+  display: block;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
