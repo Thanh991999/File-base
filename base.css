@@ -58,22 +58,45 @@ p {
   margin: 0;
 }
 
+.dfs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 .df {
+  display: flex;
+}
+
+.alc {
+  align-items: center;
+}
+
+.jcs {
+  justify-content: space-between;
+}
+
+.middle {
+  justify-items: center;
+}
+
+.fw {
+  flex-wrap: wrap;
+}
+
+.dfc   {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.df__center{
+.jcc{
   justify-content: center;
 }
 
-.df__unset{
+.df--unset{
   justify-content: unset;
-}
-
-.df__flex{
-  flex-direction: column
 }
 
 .text {
@@ -134,3 +157,109 @@ input {
   right: 0px;
   top: calc(50%);
 }
+
+/* animation slider infi */
+
+  /* .section.slider-infi {
+    padding: 100px 0 100px;
+  }
+
+  .slider {
+    overflow: hidden;
+  }
+  
+  .slider__wrapper {
+    -webkit-animation: slide 12s ease infinite;  
+    display: flex;
+    transition: all 1s linear;
+
+  }
+  
+  .slider__item {
+    flex: 1 0 100%;
+  }
+
+  .slider__item:last-child {
+
+  }
+
+  .slider__item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  @-webkit-keyframes slide {
+    20% {
+      transform: translateX(0);
+      transition: none;
+
+    }
+    30% {transform: translateX(-100%)}
+    50% {transform: translateX(-100%)}
+    60% {transform: translateX(-200%)}
+    70% {transform: translateX(-200%)}
+    80% {transform: translateX(-300%)}
+    90% {
+      transform: translateX(-300%);
+      transition: transform 1s none;
+      
+
+    }
+  } */
+  
+/* end animation slider infi */
+
+  .section.latest-products {
+    padding-top: 71px;
+  }
+
+  .latest-products__heading {
+    margin-bottom: 19px;
+  }
+
+  .category {
+    margin-bottom: 58px;
+  }
+
+  .category__item {
+    margin: 0 29px;
+  }
+
+  /* selec tab not js */
+
+.section.latest-products input{
+  display:none;
+}
+
+#category1,
+#category2,
+#category3,
+#category4 {
+  display: none
+}
+
+
+#tab1:checked ~ #category1,
+#tab2:checked ~ #category2,
+#tab3:checked ~ #category3,
+#tab4:checked ~ #category4 {
+  display: flex;
+}
+
+#tab1:checked ~ .category label[for=tab1],
+#tab2:checked ~ .category label[for=tab2],
+#tab3:checked ~ .category label[for=tab3],
+#tab4:checked ~ .category label[for=tab4] {
+  color: var(--color-pink);
+  --font-size-regular: 1.8rem;
+  --line-height-regular: 1.22em;
+  border-bottom: 1px solid #FB2448;
+}
+
+/* end select tab not js */
+
+/* active tag */
+
+
+
